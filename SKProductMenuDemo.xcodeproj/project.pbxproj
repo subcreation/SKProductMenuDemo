@@ -11,6 +11,7 @@
 		B29A2FC62991A89600E42674 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FC52991A89600E42674 /* ContentView.swift */; };
 		B29A2FC82991A89700E42674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29A2FC72991A89700E42674 /* Assets.xcassets */; };
 		B29A2FCC2991A89700E42674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29A2FCB2991A89700E42674 /* Preview Assets.xcassets */; };
+		B29A2FD32991A9BC00E42674 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD22991A9BC00E42674 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,17 @@
 		B29A2FC72991A89700E42674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B29A2FC92991A89700E42674 /* SKProductMenuDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SKProductMenuDemo.entitlements; sourceTree = "<group>"; };
 		B29A2FCB2991A89700E42674 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B29A2FD22991A9BC00E42674 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B29A2FD52991A9E000E42674 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		B29A2FD62991A9E000E42674 /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+		B29A2FD72991A9E000E42674 /* FuelSupplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelSupplyView.swift; sourceTree = "<group>"; };
+		B29A2FD82991A9E000E42674 /* FuelStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelStoreView.swift; sourceTree = "<group>"; };
+		B29A2FD92991A9E000E42674 /* SubscriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
+		B29A2FDA2991A9E000E42674 /* BuyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyButtonStyle.swift; sourceTree = "<group>"; };
+		B29A2FDB2991A9E000E42674 /* FuelProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelProductView.swift; sourceTree = "<group>"; };
+		B29A2FDC2991A9E000E42674 /* MyCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarsView.swift; sourceTree = "<group>"; };
+		B29A2FDD2991A9E000E42674 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		B29A2FDE2991A9E000E42674 /* StatusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,10 @@
 		B29A2FC22991A89600E42674 /* SKProductMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B29A2FD42991A9D200E42674 /* Views */,
 				B29A2FC32991A89600E42674 /* SKProductMenuDemoApp.swift */,
 				B29A2FC52991A89600E42674 /* ContentView.swift */,
+				B29A2FD22991A9BC00E42674 /* Store.swift */,
 				B29A2FC72991A89700E42674 /* Assets.xcassets */,
 				B29A2FC92991A89700E42674 /* SKProductMenuDemo.entitlements */,
 				B29A2FCA2991A89700E42674 /* Preview Content */,
@@ -67,6 +81,23 @@
 				B29A2FCB2991A89700E42674 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B29A2FD42991A9D200E42674 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B29A2FDA2991A9E000E42674 /* BuyButtonStyle.swift */,
+				B29A2FDB2991A9E000E42674 /* FuelProductView.swift */,
+				B29A2FD82991A9E000E42674 /* FuelStoreView.swift */,
+				B29A2FD72991A9E000E42674 /* FuelSupplyView.swift */,
+				B29A2FD62991A9E000E42674 /* ListCellView.swift */,
+				B29A2FDC2991A9E000E42674 /* MyCarsView.swift */,
+				B29A2FDD2991A9E000E42674 /* ProductDetailView.swift */,
+				B29A2FDE2991A9E000E42674 /* StatusInfoView.swift */,
+				B29A2FD52991A9E000E42674 /* StoreView.swift */,
+				B29A2FD92991A9E000E42674 /* SubscriptionsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29A2FD32991A9BC00E42674 /* Store.swift in Sources */,
 				B29A2FC62991A89600E42674 /* ContentView.swift in Sources */,
 				B29A2FC42991A89600E42674 /* SKProductMenuDemoApp.swift in Sources */,
 			);
@@ -279,7 +311,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -317,7 +349,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
