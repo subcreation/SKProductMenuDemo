@@ -26,17 +26,17 @@ struct MyCarsView: View {
                         .font(.headline)
                         .padding()
                         .multilineTextAlignment(.center)
-                    NavigationLink {
-                        StoreView()
-                    } label: {
-                        Label("Shop", systemImage: "cart")
-                            .font(.headline)
-                            .foregroundColor(.white)
-                            .padding()
-                            .frame(width: 300, height: 50, alignment: .center)
-                            .background(Color.blue)
-                            .cornerRadius(15.0)
-                    }
+//                    NavigationLink {
+//                        StoreView()
+//                    } label: {
+//                        Label("Shop", systemImage: "cart")
+//                            .font(.headline)
+//                            .foregroundColor(.white)
+//                            .padding()
+//                            .frame(width: 300, height: 50, alignment: .center)
+//                            .background(Color.blue)
+//                            .cornerRadius(15.0)
+//                    }
                 }
             } else {
                 List {
@@ -85,13 +85,13 @@ struct MyCarsView: View {
                         }
                     }
                     
-                    NavigationLink {
-                        StoreView()
-                    } label: {
-                        Label("Shop", systemImage: "cart")
-                    }
-                    .foregroundColor(.white)
-                    .listRowBackground(Color.blue)
+//                    NavigationLink {
+//                        StoreView()
+//                    } label: {
+//                        Label("Shop", systemImage: "cart")
+//                    }
+//                    .foregroundColor(.white)
+//                    .listRowBackground(Color.blue)
                 }
                 
                 .navigationTitle("SK Demo App")

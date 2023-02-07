@@ -12,6 +12,18 @@
 		B29A2FC82991A89700E42674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29A2FC72991A89700E42674 /* Assets.xcassets */; };
 		B29A2FCC2991A89700E42674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29A2FCB2991A89700E42674 /* Preview Assets.xcassets */; };
 		B29A2FD32991A9BC00E42674 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD22991A9BC00E42674 /* Store.swift */; };
+		B29A2FDF2991AC0800E42674 /* StatusInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FDE2991A9E000E42674 /* StatusInfoView.swift */; };
+		B29A2FE02991AC0800E42674 /* MyCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FDC2991A9E000E42674 /* MyCarsView.swift */; };
+		B29A2FE12991AC0800E42674 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD52991A9E000E42674 /* StoreView.swift */; };
+		B29A2FE22991AC0800E42674 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FDD2991A9E000E42674 /* ProductDetailView.swift */; };
+		B29A2FE32991AC0800E42674 /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD62991A9E000E42674 /* ListCellView.swift */; };
+		B29A2FE42991AC0800E42674 /* BuyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FDA2991A9E000E42674 /* BuyButtonStyle.swift */; };
+		B29A2FE52991AC0800E42674 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD92991A9E000E42674 /* SubscriptionsView.swift */; };
+		B29A2FE62991AC0800E42674 /* FuelStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD82991A9E000E42674 /* FuelStoreView.swift */; };
+		B29A2FE72991AC0800E42674 /* FuelSupplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FD72991A9E000E42674 /* FuelSupplyView.swift */; };
+		B29A2FE82991AC0800E42674 /* FuelProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29A2FDB2991A9E000E42674 /* FuelProductView.swift */; };
+		B29A2FEA2991AE7100E42674 /* Products.plist in Resources */ = {isa = PBXBuildFile; fileRef = B29A2FE92991AE7100E42674 /* Products.plist */; };
+		B29A2FEC2991AE8200E42674 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = B29A2FEB2991AE8200E42674 /* Products.storekit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +44,8 @@
 		B29A2FDC2991A9E000E42674 /* MyCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCarsView.swift; sourceTree = "<group>"; };
 		B29A2FDD2991A9E000E42674 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		B29A2FDE2991A9E000E42674 /* StatusInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusInfoView.swift; sourceTree = "<group>"; };
+		B29A2FE92991AE7100E42674 /* Products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Products.plist; sourceTree = "<group>"; };
+		B29A2FEB2991AE8200E42674 /* Products.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +78,13 @@
 		B29A2FC22991A89600E42674 /* SKProductMenuDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B29A2FD42991A9D200E42674 /* Views */,
 				B29A2FC32991A89600E42674 /* SKProductMenuDemoApp.swift */,
-				B29A2FC52991A89600E42674 /* ContentView.swift */,
+				B29A2FD42991A9D200E42674 /* Views */,
 				B29A2FD22991A9BC00E42674 /* Store.swift */,
 				B29A2FC72991A89700E42674 /* Assets.xcassets */,
+				B29A2FE92991AE7100E42674 /* Products.plist */,
 				B29A2FC92991A89700E42674 /* SKProductMenuDemo.entitlements */,
+				B29A2FEB2991AE8200E42674 /* Products.storekit */,
 				B29A2FCA2991A89700E42674 /* Preview Content */,
 			);
 			path = SKProductMenuDemo;
@@ -86,6 +101,7 @@
 		B29A2FD42991A9D200E42674 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B29A2FC52991A89600E42674 /* ContentView.swift */,
 				B29A2FDA2991A9E000E42674 /* BuyButtonStyle.swift */,
 				B29A2FDB2991A9E000E42674 /* FuelProductView.swift */,
 				B29A2FD82991A9E000E42674 /* FuelStoreView.swift */,
@@ -158,8 +174,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29A2FEC2991AE8200E42674 /* Products.storekit in Resources */,
 				B29A2FCC2991A89700E42674 /* Preview Assets.xcassets in Resources */,
 				B29A2FC82991A89700E42674 /* Assets.xcassets in Resources */,
+				B29A2FEA2991AE7100E42674 /* Products.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,8 +189,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29A2FD32991A9BC00E42674 /* Store.swift in Sources */,
+				B29A2FE22991AC0800E42674 /* ProductDetailView.swift in Sources */,
 				B29A2FC62991A89600E42674 /* ContentView.swift in Sources */,
+				B29A2FE52991AC0800E42674 /* SubscriptionsView.swift in Sources */,
+				B29A2FDF2991AC0800E42674 /* StatusInfoView.swift in Sources */,
+				B29A2FE32991AC0800E42674 /* ListCellView.swift in Sources */,
 				B29A2FC42991A89600E42674 /* SKProductMenuDemoApp.swift in Sources */,
+				B29A2FE42991AC0800E42674 /* BuyButtonStyle.swift in Sources */,
+				B29A2FE62991AC0800E42674 /* FuelStoreView.swift in Sources */,
+				B29A2FE12991AC0800E42674 /* StoreView.swift in Sources */,
+				B29A2FE82991AC0800E42674 /* FuelProductView.swift in Sources */,
+				B29A2FE02991AC0800E42674 /* MyCarsView.swift in Sources */,
+				B29A2FE72991AC0800E42674 /* FuelSupplyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

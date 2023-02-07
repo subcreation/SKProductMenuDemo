@@ -29,7 +29,6 @@ struct SubscriptionsView: View {
                                         status: status)
                     }
                 }
-                .listStyle(GroupedListStyle())
             }
 
             Section("Navigation: Auto-Renewable Subscription") {
@@ -37,7 +36,6 @@ struct SubscriptionsView: View {
                     ListCellView(product: product)
                 }
             }
-            .listStyle(GroupedListStyle())
         }
         .onAppear {
             Task {

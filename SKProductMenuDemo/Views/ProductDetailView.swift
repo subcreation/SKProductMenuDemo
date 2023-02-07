@@ -10,7 +10,9 @@ import SwiftUI
 import StoreKit
 
 struct ProductDetailView: View {
+    #if os(iOS)
     @Environment(\.horizontalSizeClass) var sizeClass
+    #endif
     @EnvironmentObject var store: Store
     @State private var isFuelStoreShowing = false
     
@@ -65,7 +67,9 @@ struct ProductDetailView: View {
             }
             storeConsumable(fuel)
         })
+        #if os(iOS)
         .frame(minWidth: 200, maxWidth: sizeClass == .compact ? .infinity : 400)
+        #endif
         .frame(minHeight: 200, maxHeight: 400)
         .background(Color.gray)
         .cornerRadius(15)
@@ -106,10 +110,10 @@ struct ProductDetailView: View {
         showSpeed = true
         let animationDelay: CGFloat = 0.25
         withAnimation(.spring()) {
-            carOffsetX = -UIScreen.main.bounds.size.width
+//            carOffsetX = -UIScreen.main.bounds.size.width
             isCarHidden = true
             DispatchQueue.main.asyncAfter(deadline: .now() + animationDelay) {
-                carOffsetX = UIScreen.main.bounds.size.width
+//                carOffsetX = UIScreen.main.bounds.size.width
                 isCarHidden = false
                 showSpeed = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + animationDelay) {

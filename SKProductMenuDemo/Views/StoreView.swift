@@ -18,7 +18,6 @@ struct StoreView: View {
                     ListCellView(product: car)
                 }
             }
-            .listStyle(GroupedListStyle())
 
             SubscriptionsView()
 
@@ -27,7 +26,6 @@ struct StoreView: View {
                     ListCellView(product: product, purchasingEnabled: store.purchasedSubscriptions.isEmpty)
                 }
             }
-            .listStyle(GroupedListStyle())
 
             Button("Restore Purchases", action: {
                 Task {
